@@ -1,5 +1,9 @@
 # AI Travel Planning Assistant — Singapore
 
+GitHub: https://github.com/dhavalsnc/ai-travel-assistant
+
+Demo: https://nagarro-my.sharepoint.com/:v:/p/dhaval_chandnani/IQCU4kgZxZW8TJOo3byZGIt9AWdBZzl9fTdBsl_c2h_gkK8?e=0Nizza
+
 A travel assistant that answers destination questions from a curated knowledge base
 (RAG) and fetches live weather and exchange rates through MCP tools, combining both
 when a question needs them.
