@@ -1,0 +1,60 @@
+destination: Singapore
+
+defaults:
+  license: "CC BY-SA 4.0"
+  attribution: "Wikivoyage contributors"
+
+sources:
+  - id: sg-main
+    title: "Wikivoyage: Singapore Travel Guide"
+    page: "Singapore"
+    url: "https://en.wikivoyage.org/wiki/Singapore"
+    covers: [overview, transportation, culture, practical, food, itineraries, climate]
+
+  - id: sg-riverside
+    title: "Wikivoyage: Singapore/Riverside"
+    page: "Singapore/Riverside"
+    url: "https://en.wikivoyage.org/wiki/Singapore/Riverside"
+    covers: [attractions, neighbourhoods, museums, indoor]
+
+  - id: sg-chinatown
+    title: "Wikivoyage: Singapore/Chinatown"
+    page: "Singapore/Chinatown"
+    url: "https://en.wikivoyage.org/wiki/Singapore/Chinatown"
+    covers: [culture, neighbourhoods, food, temples]
+
+  - id: sg-bugis
+    title: "Wikivoyage: Singapore/Bugis"
+    page: "Singapore/Bugis"
+    url: "https://en.wikivoyage.org/wiki/Singapore/Bugis"
+    covers: [culture, neighbourhoods, food, shopping, kampong-glam]
+
+  - id: sg-orchard
+    title: "Wikivoyage: Singapore/Orchard"
+    page: "Singapore/Orchard"
+    url: "https://en.wikivoyage.org/wiki/Singapore/Orchard"
+    covers: [shopping, indoor, neighbourhoods]
+
+  - id: sg-sentosa
+    title: "Wikivoyage: Singapore/Sentosa"
+    page: "Singapore/Sentosa"
+    url: "https://en.wikivoyage.org/wiki/Singapore/Sentosa"
+    covers: [attractions, outdoor, family, beaches]
+
+  - id: sg-marina
+    title: "Wikivoyage: Singapore/Marina Bay"
+    page: "Singapore/Marina Bay"
+    url: "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay"
+    covers: [attractions, indoor, outdoor, gardens]
+
+  - id: sg-east-coast
+    title: "Wikivoyage: Singapore/East Coast"
+    page: "Singapore/East Coast"
+    url: "https://en.wikivoyage.org/wiki/Singapore/East_Coast"
+    covers: [food, outdoor, neighbourhoods, beaches]
+
+  - id: sg-north-west
+    title: "Wikivoyage: Singapore/North and West"
+    page: "Singapore/North and West"
+    url: "https://en.wikivoyage.org/wiki/Singapore/North_and_West"
+    covers: [attractions, family, nature, zoo]

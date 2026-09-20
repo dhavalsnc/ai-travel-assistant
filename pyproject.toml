@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "travel-assistant"
+version = "0.1.0"
+description = "AI Travel Planning Assistant for Singapore: RAG knowledge base + MCP tools"
+requires-python = ">=3.10"
+dependencies = [
+    # Orchestration
+    "langchain>=1.0.0",
+    "langchain-core>=0.3.75",
+    "langchain-community>=0.3.27",
+    "langgraph>=0.6.7",
+    "langgraph-checkpoint>=2.1.1",
+
+    # LLM
+    "langchain-google-genai>=4.4.0",
+
+    # Embeddings + vector store
+    "langchain-huggingface>=0.3.1",
+    "sentence-transformers>=3.3.1",
+    "faiss-cpu>=1.9.0",
+    "torchvision>=0.29.0",
+
+    # MCP
+    "mcp>=1.14.0",
+    "langchain-mcp-adapters>=0.1.9",
+
+    # Ingestion
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.3",
+    "markdownify>=0.13.1",
+    "pyyaml>=6.0.2",
+
+    # UI + config
+    "streamlit>=1.39.0",
+    "pydantic-settings>=2.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "ruff>=0.7.0",
+]
+
+[project.scripts]
+travel-ingest = "travel_assistant.ingestion.build_index:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+    "live: hits real upstream services (Open-Meteo, Frankfurter); needs network",
+    "llm: calls the Gemini API and may cost money; needs GOOGLE_API_KEY",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
